@@ -1,172 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Antonio Covello | Mechanical & Software Test Engineer</title>
+<meta charset="UTF-8">
+<title>Antonio Covello | Engineer</title>
 
 <style>
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background-color: #f5f7fa;
-    color: #333;
-  }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f2ef;
+}
 
-  .container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+/* Layout */
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  gap: 20px;
+}
 
-  h1 {
-    color: #0a66c2;
-    margin-bottom: 5px;
-  }
+/* Sidebar */
+.sidebar {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
 
-  h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
-    margin-top: 30px;
-  }
+.sidebar h1 {
+  margin-bottom: 5px;
+  color: #0a66c2;
+}
 
-  .section {
-    margin-bottom: 25px;
-  }
+.sidebar p {
+  font-size: 14px;
+}
 
-  .job {
-    margin-bottom: 15px;
-  }
+.sidebar a {
+  color: #0a66c2;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
 
-  ul {
-    margin-top: 5px;
-  }
+/* Main content */
+.main {
+  width: 70%;
+}
 
-  a {
-    color: #0a66c2;
-    text-decoration: none;
-  }
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
 
-  .header {
-    margin-bottom: 20px;
-  }
+h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.job {
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Projects */
+.project a {
+  font-weight: bold;
+  color: #0a66c2;
+}
+
 </style>
 </head>
 
-</div>
 <body>
-  <div class="container">
 
-  <h1>Antonio Covello</h1>
-  <p><strong>Mechanical Engineer | Software Test Engineer (Automotive)</strong></p>
-  <p>Stuttgart, Germany | 
-     <a href="mailto:antoniof.covello@gmail.com">antoniof.covello@gmail.com</a> |
-     <a href="https://www.linkedin.com/in/antonio-covello/" target="_blank">LinkedIn</a>
-  </p>
+<div class="container">
 
-  <div class="section">
-    <h2>Profile</h2>
-    <p>
-      Mechanical Engineer with strong experience in automotive testing, validation, and diagnostics.
-      Skilled in EV systems, ECU testing, and data analysis. Currently working in Germany on
-      software testing for automotive systems, with a strong interest in international and
-      innovative mobility projects.
-    </p>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h1>Antonio Covello</h1>
+    <p><strong>Mechanical & Software Test Engineer</strong></p>
+    <p>Stuttgart, Germany</p>
+
+    <a href="mailto:antoniof.covello@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/antonio-covello/" target="_blank">LinkedIn</a>
+
+    <h3>Skills</h3>
+    <p>CANoe, CAPL, Matlab, Python</p>
+    <p>ECU Testing, Diagnostics</p>
+
+    <h3>Languages</h3>
+    <p>Italian (Native)</p>
+    <p>English (Professional)</p>
+    <p>German (B1)</p>
   </div>
 
-  <div class="section">
-    <h2>Work Experience</h2>
+  <!-- MAIN -->
+  <div class="main">
 
-    <div class="job">
-      <strong>Software Test Engineer – ALTEN</strong><br>
-      Stuttgart, Germany | Feb 2025 – Present
-      <ul>
-        <li>End-to-end testing in Mercedes-Benz telematics projects</li>
-        <li>Execution of software tests based on functional requirements</li>
-        <li>ECU flashing and coding for system integration</li>
-        <li>Infotainment system testing and troubleshooting</li>
-        <li>Test log analysis and validation against requirements</li>
-        <li>Creation of test cases and technical documentation</li>
-      </ul>
+    <div class="card">
+      <h2>Profile</h2>
+      <p>
+        Mechanical Engineer with strong experience in automotive testing,
+        EV systems, and software validation. Currently working in Germany
+        on advanced automotive projects, with focus on testing, diagnostics
+        and system integration.
+      </p>
     </div>
 
-    <div class="job">
-      <strong>Validation & Charging Test Engineer – Stellantis</strong><br>
-      Turin, Italy | Oct 2023 – Dec 2024
-      <ul>
-        <li>EV and EVSE charging validation</li>
-        <li>High-voltage battery validation for hybrid vehicles</li>
-        <li>ECU software integration testing (FIAT 500e project)</li>
-        <li>BMS and EVCU commissioning activities</li>
-        <li>CAN/LIN communication analysis</li>
-        <li>Development of CAPL scripts using Vector tools</li>
-      </ul>
+    <div class="card">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <strong>Software Test Engineer – ALTEN</strong><br>
+        Stuttgart | 2025 – Present
+        <ul>
+          <li>End-to-end testing (Mercedes-Benz Telematics)</li>
+          <li>ECU flashing and coding</li>
+          <li>Test case creation and validation</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <strong>Validation Engineer – Stellantis</strong><br>
+        Turin | 2023 – 2024
+        <ul>
+          <li>EV charging validation</li>
+          <li>Battery testing and diagnostics</li>
+          <li>CAPL scripting and CAN analysis</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <a href="#" target="_blank">EV Model Simulation (Matlab/Simulink)</a>
+        <ul>
+          <li>Vehicle model validation with real driving data</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="#" target="_blank">Automotive ECU Testing</a>
+        <ul>
+          <li>CAN/LIN debugging and automation with CAPL</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p><strong>Politecnico di Milano</strong> – Mechanical Engineering</p>
+      <p><strong>Università del Salento</strong> – Industrial Engineering</p>
     </div>
 
   </div>
 
-  <div class="section">
-    <h2>Education</h2>
-
-    <p><strong>Master’s Degree in Mechanical Engineering</strong><br>
-    Politecnico di Milano – 105/110<br>
-    Thesis: Electric Vehicle Modelling and Validation</p>
-
-    <p><strong>Bachelor’s Degree in Industrial Engineering</strong><br>
-    Università del Salento – 110/110</p>
-
-  </div>
-
-  <div class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>CANoe, CANalyzer, CAPL</li>
-      <li>Matlab/Simulink, Python</li>
-      <li>INCA/MDA, Vector tools</li>
-      <li>ECU Testing, Diagnostics</li>
-      <li>Oscilloscopes, Picoscope</li>
-    </ul>
-  </div>
-
-  <h2>Projects</h2>
-
-  <div class="job">
-    <strong>Electric Vehicle Modelling & Validation</strong>
-    <ul>
-      <li>Development and validation of EV models under real driving conditions</li>
-      <li>Data analysis and comparison between simulated and real vehicle behavior</li>
-      <li>Integration of simulation tools (Matlab/Simulink)</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <strong>EV Charging & Battery Validation</strong>
-    <ul>
-      <li>Validation of EV/EVSE charging processes</li>
-      <li>High-voltage battery testing for hybrid vehicles</li>
-      <li>Analysis of charging performance and diagnostics</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <strong>Automotive Software Testing (ECU)</strong>
-    <ul>
-      <li>End-to-end testing of automotive software systems</li>
-      <li>CAN/LIN communication analysis and debugging</li>
-      <li>Development of CAPL scripts and test automation</li>
-    </ul>
-  </div>
-
- <div class="section">
-    <h2>Languages</h2>
-    <ul>
-      <li>Italian – Native</li>
-      <li>English – Professional</li>
-      <li>German – B1</li>
-      <li>Spanish – Basic</li>
-    </ul>
-  </div>
+</div>
 
 </body>
 </html>
