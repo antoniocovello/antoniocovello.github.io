@@ -17,6 +17,12 @@ body {
 /* NAVBAR */
 .navbar {
 
+  position: sticky;
+
+  top: 15px;
+
+  z-index: 100;
+
   background: white;
 
   border-radius: 14px;
@@ -61,15 +67,6 @@ body {
 
 }
 
-.navbar {
-
-  position: sticky;
-
-  top: 15px;
-
-  z-index: 100;
-
-}
 
 .container {
   max-width: 900px;
