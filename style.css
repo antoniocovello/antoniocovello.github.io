@@ -1,10 +1,19 @@
+/* =========================
+   GLOBAL
+========================= */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background: #f3f2ef;
+  color: #222;
 }
 
-/* TOPBAR CONTAINER */
+
+/* =========================
+   TOPBAR
+========================= */
+
 .topbar {
 
   position: sticky;
@@ -20,14 +29,11 @@ body {
 }
 
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
-
-  position: sticky;
-
-  top: 15px;
-
-  z-index: 100;
 
   background: white;
 
@@ -41,14 +47,17 @@ body {
 
   align-items: center;
 
-  gap: 45px;
+  gap: 40px;
 
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  backdrop-filter: blur(10px);
 
 }
 
 
-/* LINKS */
+/* NAVBAR LINKS */
+
 .navbar a {
 
   text-decoration: none;
@@ -64,7 +73,8 @@ body {
 }
 
 
-/* HOVER EFFECT */
+/* NAVBAR HOVER */
+
 .navbar a:hover {
 
   color: #0a66c2;
@@ -74,34 +84,50 @@ body {
 }
 
 
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
+/* DOWNLOAD CV BUTTON */
+
+.cv-button {
+
+  background: #0a66c2;
+
+  color: white !important;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
 }
 
-/* LAYOUT */
+
+/* DOWNLOAD CV HOVER */
+
+.cv-button:hover {
+
+  background: #004182;
+
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
 .container {
+
   display: flex;
+
   max-width: 1100px;
+
   margin: 40px auto;
+
   gap: 20px;
+
 }
 
-<!--
-/* SIDEBAR */
-.sidebar {
-  width: 30%;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  height: fit-content;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
-}
--->
 
+/* =========================
+   SIDEBAR
+========================= */
 
 .sidebar {
 
@@ -121,30 +147,197 @@ body {
 
 }
 
+
+/* SIDEBAR TITLES */
+
 .sidebar h1,
+.sidebar h2,
 .sidebar h3 {
 
   color: white;
 
 }
 
+
+/* SIDEBAR TEXT */
+
+.sidebar p {
+
+  margin: 10px 0;
+
+  line-height: 1.5;
+
+}
+
+
+/* SIDEBAR LINKS */
+
 .sidebar a {
 
   color: #93c5fd;
 
+  text-decoration: none;
+
 }
 
 
-/* MAIN */
+/* SIDEBAR LINKS HOVER */
+
+.sidebar a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-pic {
+
+  width: 140px;
+
+  height: 140px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin: 15px 0;
+
+  border: 3px solid rgba(255,255,255,0.2);
+
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
 .main {
+
   width: 70%;
+
 }
 
-/* CARD */
+
+/* =========================
+   CARDS
+========================= */
+
 .card {
+
   background: white;
+
   padding: 25px;
-  border-radius: 10px;
+
+  border-radius: 14px;
+
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  transition: 0.2s ease;
+
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+
+  transform: translateY(-2px);
+
+}
+
+
+/* =========================
+   TITLES
+========================= */
+
+h2 {
+
+  margin-top: 0;
+
+  border-bottom: 2px solid #eee;
+
+  padding-bottom: 8px;
+
+}
+
+
+/* =========================
+   JOB SECTION
+========================= */
+
+.job {
+
+  margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+
+  padding-left: 20px;
+
+  line-height: 1.6;
+
+}
+
+
+/* =========================
+   PROJECT LINKS
+========================= */
+
+.project a {
+
+  color: #0a66c2;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+}
+
+
+.project a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+  .container {
+
+    flex-direction: column;
+
+    padding: 0 15px;
+
+  }
+
+  .sidebar,
+  .main {
+
+    width: 100%;
+
+  }
+
+  .navbar {
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+  }
+
 }
