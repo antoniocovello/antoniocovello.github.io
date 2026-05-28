@@ -111,28 +111,15 @@ body {
 
 }
 
-.flag-button {
-
-  display: flex;
-
-  align-items: center;
-
-}
-
-
 .flag-button img {
 
   width: 34px;
 
   height: 34px;
 
-  border-radius: 50%;
-
-  object-fit: cover;
-
   transition: 0.2s ease;
 
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: block;
 
 }
 
