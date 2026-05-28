@@ -107,6 +107,25 @@ body {
 
 }
 
+.flag-button img {
+
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  transition: 0.2s ease;
+
+}
+
+.flag-button img:hover {
+
+  transform: scale(1.1);
+
+}
 
 /* =========================
    MAIN LAYOUT
@@ -202,7 +221,13 @@ body {
 
   object-fit: cover;
 
-  margin: 15px 0;
+  object-position: center top;
+
+  transform: scale(1.15);
+
+  display: block;
+
+  margin: 20px auto;
 
   border: 3px solid rgba(255,255,255,0.2);
 
