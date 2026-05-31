@@ -1,3 +1,4 @@
+```css
 /* =========================
    GLOBAL
 ========================= */
@@ -7,123 +8,75 @@ body {
   margin: 0;
   background: #f3f2ef;
   color: #222;
+  line-height: 1.6;
 }
-
 
 /* =========================
    TOPBAR
 ========================= */
 
 .topbar {
-
   position: sticky;
-
   top: 15px;
-
   z-index: 1000;
-
   max-width: 1100px;
-
   margin: 20px auto;
-
 }
-
 
 /* =========================
    NAVBAR
 ========================= */
 
 .navbar {
-
   background: white;
-
   border-radius: 14px;
-
   padding: 18px 30px;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
-  gap: 40px;
-
+  gap: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-  backdrop-filter: blur(10px);
-
 }
-
-
-/* NAVBAR LINKS */
 
 .navbar a {
-
   text-decoration: none;
-
   color: #333;
-
   font-size: 15px;
-
   font-weight: 600;
-
   padding: 10px 18px;
-
   border-radius: 10px;
-
-  transition: 0.2s ease;
-
+  transition: all 0.2s ease;
 }
 
-
-/* NAVBAR HOVER */
-
 .navbar a:hover {
-
   background: #eef3f8;
-
   color: #0a66c2;
-
 }
 
 .navbar .active {
-
   background: #0a66c2;
-
   color: white;
-
 }
 
-
-
-/* DOWNLOAD CV HOVER */
-
-.sidebar-nav a:hover {
-
+.cv-button:hover {
   background: #eef3f8;
-
   color: #0a66c2;
+}
 
+.flag-button {
+  padding: 0 !important;
+  background: transparent !important;
 }
 
 .flag-button img {
-
   width: 34px;
-
   height: 34px;
-
-  transition: 0.2s ease;
-
   display: block;
-
+  transition: 0.2s ease;
 }
 
-
 .flag-button img:hover {
-
   transform: scale(1.08);
-
 }
 
 /* =========================
@@ -131,287 +84,215 @@ body {
 ========================= */
 
 .container {
-
   display: flex;
-
   max-width: 1100px;
-
   margin: 40px auto;
-
   gap: 20px;
-
+  align-items: flex-start;
 }
 
-
 /* =========================
-   SIDEBAR
+   HOME SIDEBAR
 ========================= */
 
 .sidebar {
-
   width: 30%;
-
   background: linear-gradient(180deg, #0f172a, #1e293b);
-
   color: white;
-
   padding: 25px;
-
   border-radius: 14px;
-
   height: fit-content;
-
   box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-
 }
-
-
-/* SIDEBAR TITLES */
 
 .sidebar h1,
 .sidebar h2,
 .sidebar h3 {
-
   color: white;
-
 }
-
-
-/* SIDEBAR TEXT */
 
 .sidebar p {
-
   margin: 10px 0;
-
-  line-height: 1.5;
-
 }
-
-
-/* SIDEBAR LINKS */
 
 .sidebar a {
-
   color: #93c5fd;
-
   text-decoration: none;
-
 }
-
-
-/* SIDEBAR LINKS HOVER */
 
 .sidebar a:hover {
-
   text-decoration: underline;
-
 }
 
-
-/* PROFILE IMAGE */
+/* =========================
+   PROFILE IMAGE
+========================= */
 
 .profile-pic {
-
   width: 140px;
-
   height: 140px;
-
   border-radius: 50%;
-
   object-fit: cover;
-
   object-position: center top;
-
   transform: scale(1.15);
-
   display: block;
-
   margin: 20px auto;
-
   border: 3px solid rgba(255,255,255,0.2);
-
 }
-
 
 /* =========================
    MAIN CONTENT
 ========================= */
 
 .main {
-
-  width: 70%;
-
+  flex: 1;
 }
-
 
 /* =========================
    CARDS
 ========================= */
 
 .card {
-
   background: white;
-
   padding: 25px;
-
   border-radius: 14px;
-
   margin-bottom: 20px;
-
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
   transition: 0.2s ease;
-
 }
-
-
-/* CARD HOVER */
 
 .card:hover {
-
   transform: translateY(-2px);
-
 }
 
+.card p {
+  margin-bottom: 15px;
+}
 
 /* =========================
    TITLES
 ========================= */
 
 h2 {
-
   margin-top: 0;
-
   border-bottom: 2px solid #eee;
-
   padding-bottom: 8px;
-
 }
 
+h3 {
+  margin-top: 25px;
+}
 
 /* =========================
    JOB SECTION
 ========================= */
 
 .job {
-
   margin-bottom: 25px;
-
 }
 
+.job strong {
+  color: #111827;
+}
+
+.job i {
+  color: #6b7280;
+}
 
 /* =========================
    LISTS
 ========================= */
 
 ul {
-
   padding-left: 20px;
-
-  line-height: 1.6;
-
+  line-height: 1.7;
 }
 
+li {
+  margin-bottom: 8px;
+}
 
 /* =========================
    PROJECT LINKS
 ========================= */
 
 .project a {
-
   color: #0a66c2;
-
   font-weight: bold;
-
   text-decoration: none;
-
 }
-
 
 .project a:hover {
-
   text-decoration: underline;
-
 }
 
+/* =========================
+   WORK / EDUCATION SIDEBAR
+========================= */
+
+.sidebar-nav {
+  width: 250px;
+  position: sticky;
+  top: 120px;
+  align-self: flex-start;
+
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.sidebar-nav h2 {
+  margin-top: 0;
+  color: #0a66c2;
+  border-bottom: none;
+}
+
+.sidebar-nav a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+  background: #eef3f8;
+  color: #0a66c2;
+}
 
 /* =========================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 ========================= */
 
 @media (max-width: 900px) {
 
   .container {
-
     flex-direction: column;
-
     padding: 0 15px;
-
   }
 
   .sidebar,
+  .sidebar-nav,
   .main {
-
     width: 100%;
+  }
 
+  .sidebar-nav {
+    position: static;
   }
 
   .navbar {
-
     flex-wrap: wrap;
+    gap: 12px;
+  }
 
-    gap: 20px;
-
+  .navbar a {
+    font-size: 14px;
   }
 
 }
-
-.sidebar-nav {
-
-  width: 25%;
-
-  background: white;
-
-  padding: 20px;
-
-  border-radius: 14px;
-
-  height: fit-content;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-}
-
-.sidebar-nav h2 {
-
-  margin-top: 0;
-
-  color: #0a66c2;
-
-}
-
-.sidebar-nav a {
-
-  display: block;
-
-  text-decoration: none;
-
-  color: #333;
-
-  padding: 12px 15px;
-
-  margin-bottom: 10px;
-
-  border-radius: 8px;
-
-  transition: 0.2s;
-
-}
-
-.sidebar-nav a:hover {
-
-  background: #eef3f8;
-
-  color: #0a66c2;
-
-}
+```
