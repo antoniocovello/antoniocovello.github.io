@@ -4,11 +4,18 @@
 ========================= */
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Georgia, serif;
   margin: 0;
   background: #f3f2ef;
   color: #222;
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+.navbar a {
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* =========================
@@ -109,6 +116,10 @@ body {
 .sidebar h2,
 .sidebar h3 {
   color: white;
+}
+.sidebar h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .sidebar p {
@@ -261,6 +272,15 @@ li {
 
 .sidebar-nav a:hover {
   background: #eef3f8;
+  color: #0a66c2;
+}
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s ease;
+}
+
+.section-link:hover {
   color: #0a66c2;
 }
 
