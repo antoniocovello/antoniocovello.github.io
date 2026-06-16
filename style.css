@@ -329,3 +329,7 @@ li {
 .main a:hover {
   text-decoration: underline;
 }
+
+[id] {
+  scroll-margin-top: 120px;
+}
